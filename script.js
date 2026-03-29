@@ -31,9 +31,9 @@ function sendMessage(event) {
 const heroSlider = document.querySelector('.hero-slider');
 
 const backgroundImages = [
-  "images/background1.jpg",
-  "images/background2.jpg",
-  "images/background3.jpg"
+  "images/background (1).jpg",
+  "images/background (2).jpg",
+  "images/background (3).jpg"
 ];
 
 let currentImageIndex = 0;
