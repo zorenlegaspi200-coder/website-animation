@@ -1,24 +1,24 @@
 function showPage(event, pageId, clickedLink) {
   event.preventDefault();
 
-  const pages = document.querySelectorAll('.page');
-  const navLinks = document.querySelectorAll('.nav-link');
+  const pages = document.querySelectorAll(".page");
+  const navLinks = document.querySelectorAll(".nav-link");
 
-  pages.forEach(page => page.classList.remove('active'));
-  navLinks.forEach(link => link.classList.remove('active'));
+  pages.forEach(page => page.classList.remove("active"));
+  navLinks.forEach(link => link.classList.remove("active"));
 
   const selectedPage = document.getElementById(pageId);
   if (selectedPage) {
-    selectedPage.classList.add('active');
+    selectedPage.classList.add("active");
   }
 
   if (clickedLink) {
-    clickedLink.classList.add('active');
+    clickedLink.classList.add("active");
   }
 
   window.scrollTo({
     top: 0,
-    behavior: 'smooth'
+    behavior: "smooth"
   });
 }
 
@@ -28,12 +28,12 @@ function sendMessage(event) {
 }
 
 /* HOME BACKGROUND SLIDESHOW */
-const heroSlider = document.querySelector('.hero-slider');
+const heroSlider = document.querySelector(".hero-slider");
 
 const backgroundImages = [
-  "images/background (1).jpg",
-  "images/background (2).jpg",
-   "images/background (3).jpg"
+  "images/background1.jpg",
+  "images/background2.jpg",
+  "images/background3.jpg"
 ];
 
 let currentImageIndex = 0;
